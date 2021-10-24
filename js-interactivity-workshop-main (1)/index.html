@@ -98,14 +98,14 @@
         let green = Math.floor(Math.random()* 256);
         let blue = Math.floor(Math.random()* 256);
 
-        console.log(red+ "," +green+ "," +blue);
+        // console.log(red+ "," +green+ "," +blue);
         imgBox.style.backgroundColor = 'rgb('+red+','+green+','+blue+')';
     }
 
-    imgBox.addEventListener('mouseover', function(event){
+    imgBox.addEventListener('click', function(event){
         hoverFunction(event);
     });
-
+    const nose = document.getElementById('nose');
     function hoverFunction(event){
         let xPos = event.clientX;
         let yPos = event.clientY;
@@ -118,7 +118,7 @@
         let mouseX = xPos - boxX;
         let mouseY = yPos - boxY;
 
-        let nosePos = document.getElementById('nose').getBBox();
+        let nosePos = nose.getBBox();
         let noseX = nosePos.x;
         let noseY = nosePos.y;
 
