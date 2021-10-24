@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+.parent{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.card{
+    border: 3px double red; 
+    width: 15vw;
+    height: 30vh;
+    border-radius: 15px;
+    padding: 25px;
+    background-color: white;
+    margin: 10px;
+    
+}
+
+#black{
+    background-color: black;
+    color: white;
+}
+
+#textbg{
+    background-color: pink;
+    border-radius: 7px;
+    box-shadow: 0px 1px purple;
+}
+
+.card p,.card h1{
+    text-shadow: 0px 1px 3px pink;
+    
+}
