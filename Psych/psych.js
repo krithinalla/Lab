@@ -2,11 +2,12 @@ window.human = false;
 
 var canvasEl = document.querySelector('.fireworks');
 var ctx = canvasEl.getContext('2d');
-var numberOfParticules = 30;
+var numberOfParticules = 100;
 var pointerX = 0;
 var pointerY = 0;
 var tap = ('ontouchstart' in window || navigator.msMaxTouchPoints) ? 'touchstart' : 'mousedown';
-var colors = ['#ff8a1c ', '#18FF92', '#5A87FF', '#FBF38C'];
+var colors = ['#fc03d7']; //chnaged the color to only one
+// var colors = ['#fc03d7', '#0703fc', '#03fc45', '#f8fc03'];
 
 function setCanvasSize() {
   canvasEl.width = window.innerWidth * 2;
@@ -26,8 +27,8 @@ function setParticuleDirection(p) {
   var value = anime.random(50, 180);
   var radius = [-1, 1][anime.random(0, 1)] * value;
   return {
-    x: p.x + radius * Math.cos(angle),
-    y: p.y + radius * Math.sin(angle)
+    x: p.x + radius / Math.cos(angle),
+    y: p.y + radius / Math.sin(angle)
   }
 }
 
@@ -83,7 +84,7 @@ function animateParticules(x, y) {
     targets: particules,
     x: function(p) { return p.endPos.x; },
     y: function(p) { return p.endPos.y; },
-    radius: 0.1,
+    radius: 0.001, //changing size of the circles
     duration: anime.random(1200, 1800),
     easing: 'easeOutExpo',
     update: renderParticule
@@ -127,7 +128,7 @@ function autoClick() {
     anime.random(centerX-50, centerX+50), 
     anime.random(centerY-50, centerY+50)
   );
-  anime({duration: 200}).finished.then(autoClick);
+  anime({duration: 100}).finished.then(autoClick);
 }
 
 autoClick();
