@@ -106,6 +106,7 @@
         hoverFunction(event);
     });
     const nose = document.getElementById('nose');
+    
     function hoverFunction(event){
         let xPos = event.clientX;
         let yPos = event.clientY;
@@ -126,6 +127,8 @@
         let realY = mouseY - noseY;
         
         nose.setAttribute('transform', 'translate('+realX+','+realY+')');
+
+        
     }
 </script> 
 
