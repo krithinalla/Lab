@@ -81,17 +81,20 @@
 </div>
 <script>
     const imgBox = document.getElementById('img-box');
-    imgBox.addEventListener('click', moveCat);
+    // imgBox.addEventListener('click', moveCat);
+    imgBox.addEventListener('click',function(event){
+        imgBox.classList.toggle('isClicked');
+    }, false);
     const cat = document.getElementById('cat');
 
-    function moveCat(){
+    // function moveCat(){
 
-        if(cat.style.marginTop == '100%'){
-            cat.style.marginTop = '0px';
-        } else {
-            cat.style.marginTop = '100%';
-        }
-    }
+    //     if(cat.style.marginTop == '100%'){
+    //         cat.style.marginTop = '0px';
+    //     } else {
+    //         cat.style.marginTop = '100%';
+    //     }
+    // }
 
     function randomColor(){
         let red = Math.floor(Math.random()* 256);
@@ -102,8 +105,12 @@
         imgBox.style.backgroundColor = 'rgb('+red+','+green+','+blue+')';
     }
 
-    imgBox.addEventListener('click', function(event){
-        hoverFunction(event);
+    imgBox.addEventListener('mousemove', function(event){
+        if(imgBox.className ==='isClicked'){
+            hoverFunction(event);
+        } else {
+            return;
+        }
     });
     const nose = document.getElementById('nose');
     

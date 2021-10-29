@@ -1,6 +1,6 @@
 window.human = false;
 
-var canvasEl = document.querySelector('.fireworks');
+var canvasEl = document.querySelector('.spores');
 var ctx = canvasEl.getContext('2d');
 var numberOfParticules = 100;
 var pointerX = 0;
@@ -10,8 +10,8 @@ var colors = ['#fc03d7']; //chnaged the color to only one
 // var colors = ['#fc03d7', '#0703fc', '#03fc45', '#f8fc03'];
 
 function setCanvasSize() {
-  canvasEl.width = window.innerWidth * 2;
-  canvasEl.height = window.innerHeight * 2;
+  canvasEl.width = window.innerWidth *2;
+  canvasEl.height = window.innerHeight *2;
   canvasEl.style.width = window.innerWidth + 'px';
   canvasEl.style.height = window.innerHeight + 'px';
   canvasEl.getContext('2d').scale(2, 2);
@@ -53,8 +53,8 @@ function createCircle(x,y) {
   p.x = x;
   p.y = y;
   p.color = '#FFF';
-  p.radius = 0.1;
-  p.alpha = .5;
+  p.radius = 0.01;
+  p.alpha = 0;
   p.lineWidth = 6;
   p.draw = function() {
     ctx.globalAlpha = p.alpha;
@@ -119,7 +119,7 @@ document.addEventListener(tap, function(e) {
   animateParticules(pointerX, pointerY);
 }, false);
 
-var centerX = window.innerWidth / 2;
+var centerX = window.innerWidth /2;
 var centerY = window.innerHeight / 2;
 
 function autoClick() {

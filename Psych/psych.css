@@ -1,3 +1,33 @@
 html, body{
-    background: rgb(0, 0, 0);
+    background: rgba(201, 173, 173, 0.959);
+    margin: 0px;
+}
+
+.images{
+    position: absolute;
+    width: 50%;
+}
+.dog{
+    width: 40%;
+    position: absolute;
+    left: 0px;
+}
+
+.next2{
+    position: absolute;
+    right: 0px;
+}
+
+.cake{
+    position: absolute;
+    right: 0px;
+}
+.middle{
+    height: 30%;
+}
+
+.logo{
+    position: absolute;
+    left: 25%;
+    top: 25%;
 }
