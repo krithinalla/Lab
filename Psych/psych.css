@@ -1,5 +1,5 @@
 html, body{
-    background: rgba(224, 138, 40, 0.959);
+    background: rgba(255, 169, 190, 0.1);
     margin: 0px;
 }
 
@@ -11,6 +11,7 @@ html, body{
     width: 40%;
     position: absolute;
     left: 0px;
+    margin: 10px;
 }
 
 .next2{
@@ -22,7 +23,7 @@ html, body{
     position: absolute;
     right: 0px;
     height: 40vh;
-
+    margin: 10px;
 }
 /* .middle{
     height: 40%;
@@ -33,4 +34,18 @@ html, body{
     left: 37%;
     top: 30%;
     width: 40vh;
+}
+
+.type{
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    margin: 10px;
+}
+
+.history{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
 }
