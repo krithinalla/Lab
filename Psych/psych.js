@@ -134,6 +134,8 @@ autoClick();
 setCanvasSize();
 window.addEventListener('resize', setCanvasSize, false);
 
+//Audio Code
+
 var songs = {
   dog: new Howl({
     src: 'audio/Baby_Tears_Blues.mp3'
@@ -156,13 +158,22 @@ var songs = {
 
 
 document.getElementById("dog").onclick = function() {
+  const dog = document.getElementById("dog");
+  dog.classList.toggle("isPlaying");
   console.log('dogisplaying');
-  // getAudioContext().resume();
+  if(dog.className ==='isPlaying'){
+    // getAudioContext().resume();
   songs.cake.pause();
   songs.logo.pause();
   songs.history.pause();
   songs.type.pause();
   songs.dog.play();
+  }else{
+    songs.dog.pause();
+  }
+  
+
+
   if (document.getElementById("barb").style.opacity = "0%") {
     document.getElementById("barb").style.opacity = "100%";
   } else {
@@ -171,41 +182,63 @@ document.getElementById("dog").onclick = function() {
 }
 
 document.getElementById("cake").onclick = function() {
+  const cake = document.getElementById("cake");
+  cake.classList.toggle("isPlaying");
   console.log('cakeisplaying');
+  if(cake.className === 'isPlaying'){
   songs.dog.pause();
   songs.logo.pause()
   songs.history.pause();
   songs.type.pause();
   songs.cake.play();
+  } else{
+    songs.cake.pause();
+  }
+  
 }
 
 document.getElementById("type").onclick = function() {
-  console.log('isplaying');
-  songs.dog.pause();
-  songs.cake.pause();
-  songs.logo.pause();
-  songs.history.pause();
-  songs.type.play();
+  const type = document.getElementById("type");
+  type.classList.toggle("isPlaying")
+  if(type.className === 'isPlaying'){
+    songs.dog.pause();
+    songs.cake.pause();
+    songs.logo.pause();
+    songs.history.pause();
+    songs.type.play();
+  } else{
+    songs.type.pause();
+  }
+
 }
 
 document.getElementById("history").onclick = function() {
-  console.log('isplaying');
-  songs.dog.pause();
-  songs.cake.pause();
-  songs.logo.pause();
-  songs.type.pause();
-  songs.history.play();
+  const history = document.getElementById("history");
+  history.classList.toggle("isPlaying")
+  if(history.className === 'isPlaying'){
+    // console.log('isplaying');
+    songs.dog.pause();
+    songs.cake.pause();
+    songs.logo.pause();
+    songs.type.pause();
+    songs.history.play();
+  } else{
+    songs.history.pause();
+  }
+ 
 }
 
 document.getElementById("logo").onclick = function() {
-  console.log('logoisplaying');
-  songs.dog.pause();
-  songs.cake.pause();
-  songs.history.pause();
-  songs.type.pause();;
-  if (songs.logo.pause()){
+  const logo = document.getElementById("logo");
+  logo.classList.toggle("isPlaying")
+  if(logo.className === 'isPlaying'){
+    // console.log('isplaying');
+    songs.dog.pause();
+    songs.cake.pause();
     songs.logo.play();
-  } else {
+    songs.type.pause();
+    songs.history.pause();
+  } else{
     songs.logo.pause();
   }
 }
