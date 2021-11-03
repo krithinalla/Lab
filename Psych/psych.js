@@ -6,8 +6,7 @@ var numberOfParticules = 100;
 var pointerX = 0;
 var pointerY = 0;
 var tap = ('ontouchstart' in window || navigator.msMaxTouchPoints) ? 'touchstart' : 'mousedown';
-var colors = ['#FC89BA','#FF74AF','#97F2B1','#FF7D2E']; //chnaged the color to only one
-// var colors = ['#fc03d7', '#0703fc', '#03fc45', '#f8fc03'];
+var colors = ['#FC89BA','#FF74AF','#97F2B1','#FF7D2E']; 
 
 function setCanvasSize() {
   canvasEl.width = window.innerWidth *2;
@@ -134,3 +133,6 @@ function autoClick() {
 autoClick();
 setCanvasSize();
 window.addEventListener('resize', setCanvasSize, false);
+
+//inspired by Julian Garnier's "Fireworks" on codepen using anime.js 
+//https://codepen.io/juliangarnier/pen/gmOwJX
