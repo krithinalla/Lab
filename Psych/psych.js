@@ -134,5 +134,81 @@ autoClick();
 setCanvasSize();
 window.addEventListener('resize', setCanvasSize, false);
 
+var songs = {
+  dog: new Howl({
+    src: 'audio/Baby_Tears_Blues.mp3'
+    // html5:true,
+  }),
+  cake: new Howl({
+    src: 'audio/Walk_a_Begonia.mp3'
+  }),
+  type: new Howl({
+    src: 'audio/Swingin_Spathiphyllums.mp3'
+  }),
+  history: new Howl({
+    src: 'audio/Symphony_Spider_Plant.mp3'
+  }),
+  logo: new Howl({
+    src: 'audio/Plantasia.mp3',
+    
+  }),
+};
+
+
+document.getElementById("dog").onclick = function() {
+  console.log('dogisplaying');
+  // getAudioContext().resume();
+  songs.cake.pause();
+  songs.logo.pause();
+  songs.history.pause();
+  songs.type.pause();
+  songs.dog.play();
+  if (document.getElementById("barb").style.opacity = "0%") {
+    document.getElementById("barb").style.opacity = "100%";
+  } else {
+    document.getElementById("barb").style.opacity = "0%";
+  }
+}
+
+document.getElementById("cake").onclick = function() {
+  console.log('cakeisplaying');
+  songs.dog.pause();
+  songs.logo.pause()
+  songs.history.pause();
+  songs.type.pause();
+  songs.cake.play();
+}
+
+document.getElementById("type").onclick = function() {
+  console.log('isplaying');
+  songs.dog.pause();
+  songs.cake.pause();
+  songs.logo.pause();
+  songs.history.pause();
+  songs.type.play();
+}
+
+document.getElementById("history").onclick = function() {
+  console.log('isplaying');
+  songs.dog.pause();
+  songs.cake.pause();
+  songs.logo.pause();
+  songs.type.pause();
+  songs.history.play();
+}
+
+document.getElementById("logo").onclick = function() {
+  console.log('logoisplaying');
+  songs.dog.pause();
+  songs.cake.pause();
+  songs.history.pause();
+  songs.type.pause();;
+  if (songs.logo.pause()){
+    songs.logo.play();
+  } else {
+    songs.logo.pause();
+  }
+}
+
 //inspired by Julian Garnier's "Fireworks" on codepen using anime.js 
 //https://codepen.io/juliangarnier/pen/gmOwJX
