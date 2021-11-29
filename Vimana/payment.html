@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+</head>
+<title>Vimana</title>
+<link rel="stylesheet" type ="text/css" href="style.css"/>
+
+<body>
+<div class="next">
+
+    <div class="payimg">
+        <img class="vim" src="Images/3mushies.png"/>
+    </div>
+    
+    <div class="paytxt">
+        <h3 class="t1">Enter your HumanID</h3>
+        <input id="myInput" value="Some text..">
+        <button id="myBtn" onclick="javascript:alert('Hello World!')">Button</button>
+
+    </div>
+
+</div>
+<script>
+    var input = document.getElementById("myInput");
+    input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("myBtn").click();
+    }
+    });
+</script>
+</body>
+</html>
