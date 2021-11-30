@@ -5218,11 +5218,16 @@ body {
 }
 
 section:nth-of-type(1) {
-  background: url("../prlx/blue-sky.jpeg");
+  /* background: url("../prlx/blue-sky.jpeg"); */
+  background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 1950px;
   text-align: center;
+}
+.vimana{
+  width:50%;
+  
 }
