@@ -14,6 +14,7 @@ and personal use =D
 */
 
 //reset the scroll to 0 (top of page)
+
 $(window).on('beforeunload', function() {
   $(window).scrollTop(0);
 });
@@ -272,3 +273,4 @@ function parallaxImgScroll(settings) {
 $.fn.hasData = function(attrName) {
   return (typeof $(this).data(attrName) != 'undefined');
 };
+ 

@@ -13,7 +13,6 @@
 </head>
 <body>
   <section>
-  <div class="container text-center">
     <div class="row">
       <div class="vimana parallax-move" data-ps-z-index="2" data-ps-speed="1" data-ps-vertical-position="200" data-ps-horizontal-position="520">
         <div id = "turn" class="rotation" data-ps-z-index="1">
@@ -47,20 +46,9 @@
           <img src="FrontView/FV-28.png">
           <img src="FrontView/FV-29.png">
           <img src="FrontView/FV-30.png">
-          
-        <!-- </div>
-        <button class="btn btn-default btn-scroll active">Scroll</button>
-        <button class="btn btn-default btn-cycle active">Cycle</button>
-        <button class="btn btn-default btn-reverse">Reverse</button>
-        &nbsp;&nbsp;&nbsp;
-        <button class="btn btn-default btn-prev">Previous</button>
-        <button class="btn btn-default btn-next">Next</button>
-        &nbsp;&nbsp;&nbsp;
-        <button class="btn btn-default btn-play">Play</button>
-        <button class="btn btn-default btn-play-to">Play to 0</button>
-      </div> -->
+        </div>
+      </div>
     </div>
-  </div>
 
     <div class="sec">
       <img src="prlx/clouds.png" class="parallax-move" data-ps-z-index="2" data-ps-speed="1" data-ps-vertical-position="200" data-ps-horizontal-position="520" >
@@ -70,11 +58,28 @@
 
   <script src="parallaxImg.js" type="text/javascript"></script>
   <script src="build/index.js"></script>
-  <script src="spin.js"></script>
+
   <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+
+$.getScript('index.js', function()
+{
+    window.onscroll = myScroll;
+    var counter = 0; // Global Variable
+    function myScroll(){
+       var val = document.getElementById("turn");
+       val.innerHTML = 'pageYOffset = ' + window.pageYOffset;
+       if(counter == 0){ // if counter is 1, it will not execute
+         if(window.pageYOffset > 2){
+            camera.play();
+            counter++; // increment the counter by 1, new value = 1
+         } 
+       }
+      }
+});
+</script>
 
 
 </body>

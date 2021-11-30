@@ -7,7 +7,7 @@ $.getScript('index.js', function()
        val.innerHTML = 'pageYOffset = ' + window.pageYOffset;
        if(counter == 0){ // if counter is 1, it will not execute
          if(window.pageYOffset > 300){
-            camera.stop();
+            camera.play();
             counter++; // increment the counter by 1, new value = 1
          }
        }
