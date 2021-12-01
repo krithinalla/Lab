@@ -5209,8 +5209,15 @@ section:nth-of-type(1) {
 }
 .vimana{
   width:30%;
-  position: absolute;
+  position: fixed;
   left: 35%;
   top:30%;
   
 }
+
+#turn{
+  /* width: 800px;
+  height: 800px; */
+  position: fixed;
+}
+

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>circlr</title>
@@ -13,9 +14,16 @@
 </head>
 <body>
   <section>
-    <div class="row">
-      <div class="vimana parallax-move" data-ps-z-index="2" data-ps-speed="1" data-ps-vertical-position="200" data-ps-horizontal-position="520">
-        <div id = "turn" class="rotation" data-ps-z-index="1">
+    <div>
+      <div>
+        <img src="prlx/clouds.png" id="sizeclouds" class="rellax" data-rellax-speed="4" data-rellax-zindex="-1" >
+        <img src="prlx/skyclouds.jpeg" class="rellax" data-rellax-speed="1" data-rellax-zindex="1" >
+      </div>
+    </div>
+
+    <div >
+      <div class="rellax vimana" data-rellax-zindex="0">
+        <div id = "turn" class="rotation">
           <img src="FrontView/FV-1.png">
           <img src="FrontView/FV-2.png">
           <img src="FrontView/FV-3.png">
@@ -50,36 +58,46 @@
       </div>
     </div>
 
-    <div class="sec">
-      <img src="prlx/clouds.png" class="parallax-move" data-ps-z-index="2" data-ps-speed="1" data-ps-vertical-position="200" data-ps-horizontal-position="520" >
-      <img src="prlx/skyclouds.jpeg" class="parallax-move" data-ps-z-index="1" data-ps-speed="0.4" data-ps-vertical-position="200" data-ps-horizontal-position="520" >
-    </div>
     </section>
 
-  <script src="parallaxImg.js" type="text/javascript"></script>
-  <script src="build/index.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
 
-  <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous">
-
-$.getScript('index.js', function()
-{
-    window.onscroll = myScroll;
-    var counter = 0; // Global Variable
-    function myScroll(){
-       var val = document.getElementById("turn");
-       val.innerHTML = 'pageYOffset = ' + window.pageYOffset;
-       if(counter == 0){ // if counter is 1, it will not execute
-         if(window.pageYOffset > 2){
-            camera.play();
-            counter++; // increment the counter by 1, new value = 1
-         } 
-       }
-      }
-});
+    
+// $.getScript('index.js', function()
+// {
+//     window.onscroll = myScroll;
+//     var counter = 0; // Global Variable
+//     function myScroll(){
+//        var val = document.getElementById("turn");
+//        val.innerHTML = 'pageYOffset = ' + window.pageYOffset;
+//        if(counter == 0){ // if counter is 1, it will not execute
+//          if(window.pageYOffset > 2){
+//             camera.play();
+//             counter++; // increment the counter by 1, new value = 1
+//          } 
+//        }
+//       }
+// });
 </script>
+
+    <script src="build/index.js"></script>
+    <script src="rellax/rellax.js"></script>
+
+    <script>
+      // Also can pass in optional settings block
+      var rellax = new Rellax('.rellax', {
+        speed: -2,
+        center: false,
+        wrapper: null,
+        round: true,
+        vertical: true,
+        horizontal: false
+      });
+    </script>
+    
 
 
 </body>
