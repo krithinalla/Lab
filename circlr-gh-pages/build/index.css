@@ -5208,22 +5208,24 @@ body {
   /* text-align: center; */
 
 .vimana{
-  width:40%;
+  width:35%;
   position: fixed;
   left: 30%;
   top:30%;
   
 }
+
 #blprint{
   position: absolute;
   right: 0;
+  margin: 10px;
 }
 
 #cl{
-  right: 0;
-  margin-top: 30vh;
+  right: -15vw;
+  margin-top: -30vh;
   position: absolute;
-  width: 50vw;
+  width: 60vw;
 }
 /* #turn{
   /* width: 800px;
@@ -5231,3 +5233,20 @@ body {
   /* position: fixed;
 }  */
 
+@font-face {
+	font-family: 'hel';
+	src: url('../fonts/HelveticaNeueLTW06-93BlkExtObl.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/HelveticaNeueLTW06-93BlkExtObl.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../fonts/HelveticaNeueLTW06-93BlkExtObl.woff') format('woff'), /* Modern Browsers */
+	     url('../fonts/HelveticaNeueLTW06-93BlkExtObl.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('../fonts/HelveticaNeueLTW06-93BlkExtObl.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
+
+h2{
+  font-family: hel;
+  color: #E7D721;
+}
+
+.sec1txt{
+  position: absolute;
+}
