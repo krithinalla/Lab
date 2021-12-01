@@ -9,6 +9,15 @@ const btnPlay = document.querySelector('.btn-play');
 const btnPlayTo = document.querySelector('.btn-play-to');
 let camera = circlr(el).scroll(true);
 
+// let count =0;
+// document.addEventListener('scroll',function()){
+//   count++;
+//   if(count %20){
+//     camera.next(true);
+//   }
+//   console.log("hi");
+// }
+
 btnScroll.addEventListener('click', (e) => {
   toggleActive(e.target);
   camera.scroll(isActive(e.target));

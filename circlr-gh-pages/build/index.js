@@ -17,6 +17,15 @@ var btnPlay = document.querySelector('.btn-play');
 var btnPlayTo = document.querySelector('.btn-play-to');
 var camera = (0, _circlr2['default'])(el).scroll(true);
 
+let count =0;
+document.addEventListener('scroll',function(){
+  count++;
+  if(count%20){
+    camera.next(true);
+  }
+  console.log("hi");
+})
+
 btnScroll.addEventListener('click', function (e) {
   toggleActive(e.target);
   camera.scroll(isActive(e.target));
@@ -527,3 +536,5 @@ module.exports.unbind = function(element, fn, capture) {
 };
 
 },{"component-event":4,"event":4}]},{},[1]);
+
+

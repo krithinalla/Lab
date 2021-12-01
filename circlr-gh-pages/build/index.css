@@ -5197,27 +5197,37 @@ body {
   margin-top: 20px;
 }
 
-section:nth-of-type(1) {
+
   /* background: url("../prlx/blue-sky.jpeg"); */
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 1950px;
-  text-align: center;
-}
+  /* background-color: black; */
+  /* -webkit-background-size: cover; */
+  /* -moz-background-size: cover; */
+  /* -o-background-size: cover; */
+  /* background-size: cover; */
+  /* height: 1950px; */
+  /* text-align: center; */
+
 .vimana{
-  width:30%;
+  width:40%;
   position: fixed;
-  left: 35%;
+  left: 30%;
   top:30%;
   
 }
+#blprint{
+  position: absolute;
+  right: 0;
+}
 
-#turn{
+#cl{
+  right: 0;
+  margin-top: 30vh;
+  position: absolute;
+  width: 50vw;
+}
+/* #turn{
   /* width: 800px;
   height: 800px; */
-  position: fixed;
-}
+  /* position: fixed;
+}  */
 
