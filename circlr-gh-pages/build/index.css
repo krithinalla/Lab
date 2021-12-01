@@ -5234,7 +5234,7 @@ body {
 }  */
 
 @font-face {
-	font-family: 'hel';
+	font-family: 'helv';
 	src: url('../fonts/HelveticaNeueLTW06-93BlkExtObl.eot'); /* IE9 Compat Modes */
 	src: url('../fonts/HelveticaNeueLTW06-93BlkExtObl.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
 	     url('../fonts/HelveticaNeueLTW06-93BlkExtObl.woff') format('woff'), /* Modern Browsers */
@@ -5242,11 +5242,39 @@ body {
 	     url('../fonts/HelveticaNeueLTW06-93BlkExtObl.svg#svgFontName') format('svg'); /* Legacy iOS */
 	}
 
-h2{
-  font-family: hel;
-  color: #E7D721;
-}
+  h2{
+    font-family: helv;
+    color: #E7D721;
+  }
+  
+  #text-box{
+    position: absolute;
+    Width: 35vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+  }
 
-.sec1txt{
-  position: absolute;
-}
+  #text-box p{
+    color: #E7D721;
+    font-family: 'Sorts Mill Goudy', serif;
+  }
+  
+  
+  #first-div{
+    background-image: url('../prlx/landingbg1.png');
+    height:100vh;
+  }
+  #book{
+    position: absolute;
+    margin-top: -30vh;
+    margin-left: 5vw;
+    cursor: pointer;
+  }
+  #book:hover {
+    text-decoration: underline #e7d721;
+  }
+  #book h2{
+    font-size: 120px;
+  }
