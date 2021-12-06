@@ -5212,20 +5212,27 @@ body {
   position: fixed;
   left: 30%;
   top:30%;
-  
+  cursor: move;
 }
 
 #blprint{
   position: absolute;
   right: 0;
-  margin: 10px;
+  margin: 20px;
+  width: 30vw;
 }
 
 #cl{
   right: -15vw;
-  margin-top: -30vh;
+  margin-top: -40vh;
   position: absolute;
-  width: 60vw;
+  width: 70vw;
+}
+
+.ship{
+  position: absolute;
+  right: 0;
+  margin-top: 200px;
 }
 /* #turn{
   /* width: 800px;
@@ -5241,6 +5248,8 @@ body {
 	     url('../fonts/HelveticaNeueLTW06-93BlkExtObl.ttf')  format('truetype'), /* Safari, Android, iOS */
 	     url('../fonts/HelveticaNeueLTW06-93BlkExtObl.svg#svgFontName') format('svg'); /* Legacy iOS */
 	}
+
+  
 
   h2{
     font-family: helv;
@@ -5266,15 +5275,85 @@ body {
     background-image: url('../prlx/landingbg1.png');
     height:100vh;
   }
-  #book{
+
+  #second-div{
+    background-image: url('../prlx/bg2.png');
+    height:100vh;
+  }
+
+  #lady{
+    right: 0;
     position: absolute;
-    margin-top: -30vh;
-    margin-left: 5vw;
-    cursor: pointer;
   }
-  #book:hover {
-    text-decoration: underline #e7d721;
+#marigold{
+  position: absolute;
+  left: 0;
+}
+
+#call{
+position: absolute;
+left: 10vw;
+margin-top: 20vh;
+}
+
+.col:hover {
+  position: relative;
+  transform:scale(1.1);
+  cursor: pointer;
+}
+
+#land{
+  position: absolute;
+  margin-top: 70vh;
+}
+
+#book{
+  position: absolute;
+  margin-top: -30vh;
+  margin-left: 5vw;
+  cursor: pointer;
   }
-  #book h2{
-    font-size: 120px;
+
+#ship{
+  position: absolute;
+  font-family: 'Sorts Mill Goudy', serif;
+  color: #E7D721;
+  right: 0;
+  margin-top: 250px;
+  margin-right: 250px;
+}
+
+
+#test{
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  margin-right: 160px;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+
+#second-text-box{
+  Width: 35vw;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#second-text-box p{
+  color: #E7D721;
+  font-family: 'Sorts Mill Goudy', serif;
+  z-index: 1;
+}
+#second-text-box h2{
+  z-index: 1;
+}
+
+#book:hover {
+  text-decoration: underline #e7d721;
   }
+#book h2{
+  font-size: 120px;
+  }
+
