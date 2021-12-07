@@ -5207,11 +5207,14 @@ body {
   /* height: 1950px; */
   /* text-align: center; */
 
+section{
+    background-color: black;
+  }
 .vimana{
-  width:35%;
+  width:40%;
   position: fixed;
   left: 30%;
-  top:30%;
+  top:17%;
   cursor: move;
 }
 
@@ -5270,20 +5273,44 @@ body {
     font-family: 'Sorts Mill Goudy', serif;
   }
   
+
   
   #first-div{
     background-image: url('../prlx/landingbg1.png');
-    height:100vh;
+    height:110vh;
   }
 
   #second-div{
     background-image: url('../prlx/bg2.png');
     height:100vh;
   }
+  #third-div{
+    background-image: url('../prlx/shipanybg.png');
+    height:100vh;
+    margin: 0;
+    
+  }
+
+  #fourth-div{
+    background-image: url('../prlx/trash.png');
+    height:100vh;
+  }
+
+  #fifth-div{
+    background-image: url('../prlx/pinkbg.png');
+    height:100vh;
+  }
+
+  #sixth-div{
+    background-image: url('../prlx/skybghumble.png');
+    height:100vh;
+  }
+ 
 
   #lady{
     right: 0;
     position: absolute;
+    margin-top: -10vh;
   }
 #marigold{
   position: absolute;
@@ -5293,7 +5320,7 @@ body {
 #call{
 position: absolute;
 left: 10vw;
-margin-top: 20vh;
+margin-top: 10vh;
 }
 
 .col:hover {
@@ -5304,7 +5331,8 @@ margin-top: 20vh;
 
 #land{
   position: absolute;
-  margin-top: 70vh;
+  margin-top: 50vh;
+ left: 0;
 }
 
 #book{
@@ -5329,10 +5357,18 @@ margin-top: 20vh;
   cursor: pointer;
   right: 0;
   margin-right: 160px;
-  margin-bottom: 10px;
+  margin-top: -35vh;
   z-index: 1;
 }
 
+#test h3{
+  font-family: helv;
+  color: #E7D721;
+}
+
+.down{
+  margin-top: 77vh;
+}
 
 #second-text-box{
   Width: 35vw;
@@ -5357,3 +5393,154 @@ margin-top: 20vh;
   font-size: 120px;
   }
 
+.planets{
+  margin-left: 10vw;
+  margin-top: 10vh;
+}
+
+.box{
+  position: absolute;
+  margin-top: 5vh;
+  margin-left: 3vw;
+}
+.next{
+  position: absolute;
+  right: 70px;
+  margin-top: 85vh;
+}
+
+
+
+.nextpage:hover{
+  text-decoration: underline #e7d721;
+  cursor: pointer;
+}
+.boxhum{
+  position: absolute;
+  margin-top: 5vh;
+  margin-left: 60vw;
+}
+
+#humtxt{
+  width: 30vw;
+  font-family: 'Sorts Mill Goudy', serif;
+  color: #E7D721;
+}
+
+.boxhead{
+  position: absolute;
+  margin-top: 65vh;
+  width: 25vw;
+  margin-left:10vw;
+}
+
+
+.head{
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+.box h2{
+  font-size: 40px;
+}
+
+.amul{
+  position: absolute;
+  left: 0;
+  margin-top: -10vh;
+}
+
+.sat{
+  position: absolute;
+  right: 0;
+  margin-top: 30vh;
+}
+
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  flex-direction:row;
+}
+
+.grid>* {
+    flex: 1 1 1px;
+}
+
+.grid h3{
+  font-family: helv;
+    color: #E7D721;
+}
+
+.grid p{
+  font-family: 'Sorts Mill Goudy', serif;
+    color: #E7D721;
+}
+
+
+.nine{
+  width: 15vw;
+  transform: rotate(10deg);
+}
+
+#trashtxt{
+  width: 30%;
+  font-family: 'Sorts Mill Goudy', serif;
+  color: #E7D721;
+}
+
+.limit{
+  position: absolute;
+  right: 0;
+  width: 20vw;
+}
+
+.vim1{
+  position: absolute;
+  left: 0;
+  margin-top: 140vh;
+}
+
+.vim{
+  position: absolute;
+  right: 0;
+  margin-top: 60vh;
+}
+
+.frame{
+  position: absolute;
+  left: 0;
+  margin-top: -35vh;
+  width: 40vw;
+  margin-left: 10vw;
+}
+
+.frame1{
+  position: absolute;
+  right: 0;
+  width: 43vw;
+  margin-right: 5vw;
+  margin-top: -15vh;
+}
+
+.scloud{
+  position: absolute;
+  left: 90px;
+  margin-top: 200vh;
+}
+
+.lscloud{
+  position: absolute;
+  right: 80px;
+  margin-top: 230vh;
+}
+
+.bigcloud{
+  position: absolute;
+  width: 60vw;
+  margin-top: 220vh;
+}
+
+.heading h2{
+  margin-top: 60vh ;
+}
