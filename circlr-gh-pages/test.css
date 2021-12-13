@@ -1,7 +1,9 @@
 /* html{
     overflow: hidden;
 } */
-
+body{
+  background-image: url('prlx/bookbg.png');
+}
 .container {
     display: flex; 
     flex-direction: row;
@@ -9,6 +11,7 @@
 .content { 
     width: 50%;
     font-family: 'Sorts Mill Goudy', serif;
+    color: #E7D721;
 }
 
 .row{
@@ -21,14 +24,23 @@
 }
 
 .t1{
-  font-family: 'Sorts Mill Goudy', serif;
+  font-family: helv;
     margin-top: 3em;
+    color: #E7D721;
 }
 
 .content h4{
     margin-top: 1em;
     margin-bottom: 1em;
 }
+@font-face {
+	font-family: 'helv';
+	src: url('fonts/HelveticaNeueLTW06-93BlkExtObl.eot'); /* IE9 Compat Modes */
+	src: url('fonts/HelveticaNeueLTW06-93BlkExtObl.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('fonts/HelveticaNeueLTW06-93BlkExtObl.woff') format('woff'), /* Modern Browsers */
+	     url('fonts/HelveticaNeueLTW06-93BlkExtObl.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('fonts/HelveticaNeueLTW06-93BlkExtObl.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
 
 .flo {
    position: fixed;
@@ -48,7 +60,7 @@ input[type=text], select {
   }
 
   .tc{
-    background-image: url('prlx/bookbg.png');
+    font-family: 'Sorts Mill Goudy', serif;
     font-weight: 100;
   }
 

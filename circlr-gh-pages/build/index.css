@@ -5354,11 +5354,15 @@ margin-top: 10vh;
 
 #test{
   position: absolute;
-  cursor: pointer;
   right: 0;
   margin-right: 160px;
   margin-top: -35vh;
   z-index: 1;
+}
+
+#test:hover{
+  cursor: pointer;
+  text-decoration: underline #e7d721;
 }
 
 #test h3{
@@ -5367,7 +5371,7 @@ margin-top: 10vh;
 }
 
 .down{
-  margin-top: 77vh;
+  margin-top: 72vh;
 }
 
 #second-text-box{
@@ -5381,6 +5385,7 @@ margin-top: 10vh;
   color: #E7D721;
   font-family: 'Sorts Mill Goudy', serif;
   z-index: 1;
+  width: 30vw;
 }
 #second-text-box h2{
   z-index: 1;
@@ -5470,6 +5475,7 @@ margin-top: 10vh;
 .grid h3{
   font-family: helv;
     color: #E7D721;
+    font-size: 15px;
 }
 
 .grid p{
@@ -5484,27 +5490,80 @@ margin-top: 10vh;
 }
 
 #trashtxt{
-  width: 30%;
+  width: 33%;
   font-family: 'Sorts Mill Goudy', serif;
   color: #E7D721;
 }
+.specs{
+  font-family: helv;
+  color: #000;
+  font-size: 40px;
+}
 
+.smallt{
+  font-family: 'Sorts Mill Goudy', serif;
+  color: white;
+  font-size: 30px;
+}
+
+.bigtt{
+  font-size: 80px;
+  color: white;
+}
 .limit{
   position: absolute;
   right: 0;
-  width: 20vw;
+  width: 30vw;
+  margin-top: 70vh;
+  margin-right: -3vw;
 }
+
+.fourlimit{
+  font-size: 100px;
+}
+
+.ar{
+  position: absolute;
+  right: 0;
+  width: 30vw;
+  margin-top: 87vh;
+  margin-right: -3vw;
+  font-family: helv;
+  color: #E7D721;
+}
+
+.ar:hover{
+  cursor:pointer;
+  color: #E7D721;
+}
+
 
 .vim1{
   position: absolute;
   left: 0;
-  margin-top: 140vh;
+  margin-top: 160vh;
+  width: 40%;
 }
+
+.vim:hover{
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+
+.vim1:hover{
+  animation: fadeIn 5s;
+}
+
 
 .vim{
   position: absolute;
   right: 0;
   margin-top: 60vh;
+  width: 35%;
 }
 
 .frame{
