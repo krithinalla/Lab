@@ -47,6 +47,9 @@ input[type=text], select {
     box-sizing: border-box;
   }
 
+  .decbutton {
+    color: #000000;
+  }
   .tc{
     background-image: url('prlx/bookbg.png');
     font-weight: 100;

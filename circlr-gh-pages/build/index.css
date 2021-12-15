@@ -412,7 +412,7 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 h1 small,
@@ -1688,7 +1688,7 @@ legend {
 label {
   display: inline-block;
   max-width: 100%;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
   font-weight: bold;
 }
 input[type="search"] {
@@ -5283,6 +5283,31 @@ section{
   #second-div{
     background-image: url('../prlx/bg2.png');
     height:100vh;
+    margin-top: -6px;
+  }
+
+  .testi{
+    position: absolute;
+    width: 40vw;
+    right: 0;
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+
+  .testi {
+    display: none;
+  }
+  /* .test-box:hover + .testi{
+    display: inline;
+    position: absolute;
+  } */
+
+  .testi:hover { 
+    display: block;
+  }
+
+  .test-box:hover{
+    cursor: pointer;
   }
   #third-div{
     background-image: url('../prlx/shipanybg.png');
@@ -5358,17 +5383,19 @@ margin-top: 10vh;
   margin-right: 160px;
   margin-top: -35vh;
   z-index: 1;
-}
-
-#test:hover{
-  cursor: pointer;
-  text-decoration: underline #e7d721;
-}
-
-#test h3{
   font-family: helv;
   color: #E7D721;
 }
+
+/* #test:hover{
+  cursor: pointer;
+  text-decoration: underline #e7d721;
+} */
+
+/* #test h3{
+  font-family: helv;
+  color: #E7D721;
+} */
 
 .down{
   margin-top: 72vh;
@@ -5497,7 +5524,11 @@ margin-top: 10vh;
 .specs{
   font-family: helv;
   color: #000;
-  font-size: 40px;
+  font-size: 38px;
+}
+
+.lineht{
+  line-height: 1.4;
 }
 
 .smallt{
@@ -5594,10 +5625,23 @@ margin-top: 10vh;
   margin-top: 230vh;
 }
 
+.lscloud2{
+  position: absolute;
+  right: 50px;
+  margin-top: 5vh;
+}
+
 .bigcloud{
   position: absolute;
   width: 60vw;
   margin-top: 220vh;
+}
+
+.bigcloud2{
+  position: absolute;
+  width: 50vw;
+  margin-top: 70vh;
+  left: -10vw;
 }
 
 .heading h2{
