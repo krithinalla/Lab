@@ -5281,12 +5281,14 @@ section{
   #first-div{
     background-image: url('../prlx/landingbg1.png');
     height:110vh;
+          background-size: cover;
   }
 
   #second-div{
     background-image: url('../prlx/bg2.png');
     height:100vh;
     margin-top: -6px;
+          background-size: cover;
   }
 
   .testi{
@@ -5316,22 +5318,26 @@ section{
     background-image: url('../prlx/shipanybg.png');
     height:100vh;
     margin: 0;
+          background-size: cover;
     
   }
 
   #fourth-div{
     background-image: url('../prlx/trash.png');
     height:100vh;
+          background-size: cover;
   }
 
   #fifth-div{
     background-image: url('../prlx/pinkbg.png');
     height:100vh;
+          background-size: cover;
   }
 
   #sixth-div{
     background-image: url('../prlx/skybghumble.png');
     height:100vh;
+          background-size: cover;
   }
  
 
